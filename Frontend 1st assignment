@@ -1,0 +1,84 @@
+fun main(args: Array<String>) {
+    var fullName = "Shalom Uwamahoro"
+println(fullName)
+    var age = 23
+    println(age)
+    var phoneNumber = +250783430922
+    println(phoneNumber)
+    var weightInKg= 58
+    println(weightInKg)
+    var citizen = "true"
+    val nonCitizen = "false"
+    println(citizen)
+
+
+} My Explanation: The above runned on Main.kt(in IntelliJ)
+
+
+ar-Assign$ ls
+out  src  Var-Assign.iml
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign$ cd src
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign/src$ ls
+main  test
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign/src$ cd main
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign/src/main$ ls
+kotlin  resources
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign/src/main$ cd kotlin
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign/src/main/kotlin$ ls
+Main.kt
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign/src/main/kotlin$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint:   git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/student/IdeaProjects/Var-Assign/src/main/kotlin/.git/
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign/src/main/kotlin$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Main.kt
+
+nothing added to commit but untracked files present (use "git add" to track)
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign/src/main/kotlin$ git add .
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign/src/main/kotlin$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Main.kt
+
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign/src/main/kotlin$ git commit -m "add one file"
+[master (root-commit) 51b6d32] add one file
+ 1 file changed, 15 insertions(+)
+ create mode 100644 Main.kt
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign/src/main/kotlin$ git remote add origin https://github.com/Shalom-uwamahoro/Frontend-1.git
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign/src/main/kotlin$ git branch
+* master
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign/src/main/kotlin$ git push -u origin master
+Username for 'https://github.com': Shalom-uwamahoro
+Password for 'https://Shalom-uwamahoro@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 390 bytes | 390.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Shalom-uwamahoro/Frontend-1.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+student@oem-ThinkPad-E14-Gen-4:~/IdeaProjects/Var-Assign/src/main/kotlin$ 
+
+
+MY EXPLANATION; THE ABOVE WAS RUN IN TERMINAL INSIDE THE INTELLIJ (N.B: I DID NOT NEED TO CONFIG GIT SINCE GITHUB KNOWS ME NOW,PLUS PUSH COMMAND HAS -u)
+

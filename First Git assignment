@@ -1,0 +1,67 @@
+student@oem-ThinkPad-E14-Gen-4:~$ git config --global user.name "Shalom-uwamahoro"
+student@oem-ThinkPad-E14-Gen-4:~$ git config --global user.email "shalomuwamahoro@gmail.com"
+student@oem-ThinkPad-E14-Gen-4:~$ mkdir Assign-1
+student@oem-ThinkPad-E14-Gen-4:~$ ls
+ Assign-1  'Content added to files on git'   Downloads   git_101  'Git Commands'   Screenshots   shally_101   snap
+student@oem-ThinkPad-E14-Gen-4:~$ cd Assign-1
+student@oem-ThinkPad-E14-Gen-4:~/Assign-1$ touch Python.py
+student@oem-ThinkPad-E14-Gen-4:~/Assign-1$ touch JavaScript.js
+student@oem-ThinkPad-E14-Gen-4:~/Assign-1$ touch Kotlin.kot
+student@oem-ThinkPad-E14-Gen-4:~/Assign-1$ ls
+JavaScript.js  Kotlin.kot  Python.py
+student@oem-ThinkPad-E14-Gen-4:~/Assign-1$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/student/Assign-1/.git/
+student@oem-ThinkPad-E14-Gen-4:~/Assign-1$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	JavaScript.js
+	Kotlin.kot
+	Python.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+student@oem-ThinkPad-E14-Gen-4:~/Assign-1$ git add .
+student@oem-ThinkPad-E14-Gen-4:~/Assign-1$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   JavaScript.js
+	new file:   Kotlin.kot
+	new file:   Python.py
+
+student@oem-ThinkPad-E14-Gen-4:~/Assign-1$ git commit -m "added three files"
+[master (root-commit) d9eb189] added three files
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 JavaScript.js
+ create mode 100644 Kotlin.kot
+ create mode 100644 Python.py
+student@oem-ThinkPad-E14-Gen-4:~/Assign-1$ git remote add origin https://github.com/Shalom-uwamahoro/Dev101-assignment-1.git
+student@oem-ThinkPad-E14-Gen-4:~/Assign-1$ git push origin master
+Username for 'https://github.com': Shalom-uwamahoro
+Password for 'https://Shalom-uwamahoro@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 253 bytes | 253.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Shalom-uwamahoro/Dev101-assignment-1.git
+ * [new branch]      master -> master
+student@oem-ThinkPad-E14-Gen-4:~/Assign-1$ 
+

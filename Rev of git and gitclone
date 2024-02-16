@@ -1,0 +1,235 @@
+student@oem-ThinkPad-E14-Gen-4:~$ mkdir git-102
+student@oem-ThinkPad-E14-Gen-4:~$ ls
+ Akirachix.jpg  'Content added to files on git'   Documents  'First Git assignment'   git-102         IdeaProjects    Screenshots   shally87      snap
+ Assign-1        dev101_week2                     Downloads   git_101                'Git Commands'   Lovelace-html   shally_101    Shalom_html   Uwamahoro_html
+student@oem-ThinkPad-E14-Gen-4:~$ cd git-102
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ touch index.html
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ touch navbar.htMl
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ ls
+index.html  navbar.htMl
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/student/git-102/.git/
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	index.html
+	navbar.htMl
+
+nothing added to commit but untracked files present (use "git add" to track)
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git add .
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   index.html
+	new file:   navbar.htMl
+
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git commit -m "added two files"
+[master (root-commit) 65e006c] added two files
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 navbar.htMl
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git remote add origin https://github.com/Shalom-uwamahoro/Git_102.git
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git branch
+* master
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git push -u origin master
+Username for 'https://github.com': Shalom-uwamahoro
+Password for 'https://Shalom-uwamahoro@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Shalom-uwamahoro/Git_102.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ cd git-102
+bash: cd: git-102: No such file or directory
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ touch footer.html
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git add "footer.html"
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   footer.html
+
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git commit -m "added one file"
+[master d97fd02] added one file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 footer.html
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git remote add origin https://github.com/Shalom-uwamahoro/Git_102.git
+error: remote origin already exists.
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git push -u origin master
+Username for 'https://github.com': Shalom-uwamahoro
+Password for 'https://Shalom-uwamahoro@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 264 bytes | 264.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Shalom-uwamahoro/Git_102.git
+   65e006c..d97fd02  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ touch section1.html
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	section1.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git add section1.html
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   section1.html
+
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git log
+commit d97fd02e53b67791d368fd35e3ed9d7b2f288617 (HEAD -> master, origin/master)
+Author: Shalom-uwamahoro <shalomuwamahoro@gmail.com>
+Date:   Thu Feb 8 13:56:15 2024 +0300
+
+    added one file
+
+commit 65e006c97a300722761eafd91b2f163f856a56f8
+Author: Shalom-uwamahoro <shalomuwamahoro@gmail.com>
+Date:   Thu Feb 8 13:36:34 2024 +0300
+
+    added two files
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ rm navbar.html
+rm: cannot remove 'navbar.html': No such file or directory
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ rm -r navbar.html
+rm: cannot remove 'navbar.html': No such file or directory
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ rm -r navbar.htMl
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git commit -m "removed navbar.htMl"
+[master bcc0879] removed navbar.htMl
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 section1.html
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    navbar.htMl
+
+no changes added to commit (use "git add" and/or "git commit -a")
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git push -u origin master
+Username for 'https://github.com': Shalom-uwamahoro
+Password for 'https://Shalom-uwamahoro@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 248 bytes | 248.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Shalom-uwamahoro/Git_102.git
+   d97fd02..bcc0879  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git remote -v
+origin	https://github.com/Shalom-uwamahoro/Git_102.git (fetch)
+origin	https://github.com/Shalom-uwamahoro/Git_102.git (push)
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ git checkout d97fd02e53b67791d368fd35e3ed9d7b2f288617
+D	navbar.htMl
+Note: switching to 'd97fd02e53b67791d368fd35e3ed9d7b2f288617'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at d97fd02 added one file
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ cd .. git-102
+bash: cd: too many arguments
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ rm git-102
+rm: cannot remove 'git-102': No such file or directory
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ cd .. git-102
+bash: cd: too many arguments
+student@oem-ThinkPad-E14-Gen-4:~/git-102$ cd ..
+student@oem-ThinkPad-E14-Gen-4:~$ rm git-102
+rm: cannot remove 'git-102': Is a directory
+student@oem-ThinkPad-E14-Gen-4:~$ fuser -k .git
+Specified filename .git does not exist.
+student@oem-ThinkPad-E14-Gen-4:~$ ls
+ Akirachix.jpg  'Content added to files on git'   Documents  'First Git assignment'   git-102         IdeaProjects    Screenshots   shally87      snap
+ Assign-1        dev101_week2                     Downloads   git_101                'Git Commands'   Lovelace-html   shally_101    Shalom_html   Uwamahoro_html
+student@oem-ThinkPad-E14-Gen-4:~$ rm -rf git-102
+student@oem-ThinkPad-E14-Gen-4:~$ ls
+ Akirachix.jpg  'Content added to files on git'   Documents  'First Git assignment'  'Git Commands'   Lovelace-html   shally_101   Shalom_html   Uwamahoro_html
+ Assign-1        dev101_week2                     Downloads   git_101                 IdeaProjects    Screenshots     shally87     snap
+student@oem-ThinkPad-E14-Gen-4:~$ mkdir git-clone
+student@oem-ThinkPad-E14-Gen-4:~$ cd git-clone
+student@oem-ThinkPad-E14-Gen-4:~/git-clone$ git clone https://github.com/Shalom-uwamahoro/Git_102.git
+Cloning into 'Git_102'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 7 (delta 1), reused 7 (delta 1), pack-reused 0
+Receiving objects: 100% (7/7), done.
+Resolving deltas: 100% (1/1), done.
+student@oem-ThinkPad-E14-Gen-4:~/git-clone$ ls
+Git_102 
+student@oem-ThinkPad-E14-Gen-4:~/git-clone$ cd Git_102
+student@oem-ThinkPad-E14-Gen-4:~/git-clone/Git_102$ ls
+footer.html  index.html  navbar.htMl  section1.html
+student@oem-ThinkPad-E14-Gen-4:~/git-clone/Git_102$ touch section2.html
+student@oem-ThinkPad-E14-Gen-4:~/git-clone/Git_102$ git add "section2.html"
+student@oem-ThinkPad-E14-Gen-4:~/git-clone/Git_102$ git commit -m "added section2 file"
+[master 3e05c8f] added section2 file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 section2.html
+student@oem-ThinkPad-E14-Gen-4:~/git-clone/Git_102$ git push -u origin master
+Username for 'https://github.com': Shalom-uwamahoro
+Password for 'https://Shalom-uwamahoro@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 246 bytes | 246.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Shalom-uwamahoro/Git_102.git
+   bcc0879..3e05c8f  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+student@oem-ThinkPad-E14-Gen-4:~/git-clone/Git_102$ 
+
+

@@ -1,0 +1,21 @@
+student@oem-ThinkPad-E14-Gen-4:~$ cd Documents
+student@oem-ThinkPad-E14-Gen-4:~/Documents$ mkdir lovelace_2024
+student@oem-ThinkPad-E14-Gen-4:~/Documents$ ls
+Herlife  lovelace_2024
+student@oem-ThinkPad-E14-Gen-4:~/Documents$ cd Lovelace_2024
+bash: cd: Lovelace_2024: No such file or directory
+student@oem-ThinkPad-E14-Gen-4:~/Documents$ cd lovelace_2024
+student@oem-ThinkPad-E14-Gen-4:~/Documents/lovelace_2024$ touch shalom.txt
+student@oem-ThinkPad-E14-Gen-4:~/Documents/lovelace_2024$ nano
+student@oem-ThinkPad-E14-Gen-4:~/Documents/lovelace_2024$ nano shalom.txt
+student@oem-ThinkPad-E14-Gen-4:~/Documents/lovelace_2024$ cat shalom.txt
+My name is Shalom. I am a student at Akirachix. I am in Lovelace class.
+student@oem-ThinkPad-E14-Gen-4:~/Documents/lovelace_2024$ code .
+student@oem-ThinkPad-E14-Gen-4:~/Documents/lovelace_2024$ cat shalom.txt
+My name is Shalom. I am a student at Akirachix. I am in Lovelace Lab.
+student@oem-ThinkPad-E14-Gen-4:~/Documents/lovelace_2024$ cat coppier.txt
+cat: coppier.txt: No such file or directory
+student@oem-ThinkPad-E14-Gen-4:~/Documents/lovelace_2024$ 
+
+
+

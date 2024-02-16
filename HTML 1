@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My webpage</title>
+</head>
+<body style="background-color: brown;">
+    <marquee><h1 style="color: green; border: 1px solid">Hightlights of My First Week at Akirachix</h1></marquee>
+
+
+<img src="https://opportunitydesk.org/wp-content/uploads/2019/12/AkiraChix-codeHive-Program-2020-for-Young-Women.jpg" alt="Beauty of Akirachix" width=""height=""/>
+
+
+<h2 style="color: brown">Things that went well</h2>
+<ol>
+        <li>I was well welcomed with by Akirachix alumni</li>
+        <li>I love the bedroom arrangement and neatness of the bed</li>
+        <li>I liked the way the care-takers were willing to guide as on everything we are not familiar with</li>
+        <li>I enjoyed tasting different dishes of delicous food serve</li>
+    </ol>
+</p>
+<p>
+    <h2 style="color: brown">Things that did not necessarily go well</h2>
+    <span>Around them on same line</span>
+    <span>And we still move</span>
+    
+    <ul>
+        <li>The weather was so cold</li>
+        <li>There is one dish I tried and it messed with my stomach</li>
+        <li>It was somehow challenging to clean the washroom very well before going to class</li>
+        <li>For first time, it was difficult for me to arrange wardrobe</li>
+
+   <h3 <!-- then we walked --> We moved too fast</h3> 
+    </ul>
+</p>
+    
+</body>
+</html>
+

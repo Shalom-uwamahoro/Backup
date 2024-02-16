@@ -1,0 +1,27 @@
+fun main() {
+  var solarSystemPlanets: Byte = 8
+  solarSystemPlanets =  127
+
+  var numCountries: Short =195
+  numCountries =  32767
+
+  var kenyaPopulation: Int = 53010000
+  kenyaPopulation = 2147483647
+
+  var worldPopulation: Long = 788800000000
+
+  var weight: Float = 45.3F
+
+  var amount: Double = 32.64
+
+  var initial: Char = 'L'
+
+  var school: String = "Akirachix"
+
+  var late =  false
+
+  var attendedClass = true
+  
+  var classes =  arrayOf("Lovelace","Anitab","Adalab")
+  
+  var stats = arrayOf("Kenya"."")

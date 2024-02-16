@@ -1,0 +1,85 @@
+student@oem-ThinkPad-E14-Gen-4:~$ apt-get update
+Reading package lists... Done
+E: Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)
+E: Unable to lock directory /var/lib/apt/lists/
+W: Problem unlinking the file /var/cache/apt/pkgcache.bin - RemoveCaches (13: Permission denied)
+W: Problem unlinking the file /var/cache/apt/srcpkgcache.bin - RemoveCaches (13: Permission denied)
+student@oem-ThinkPad-E14-Gen-4:~$ sudo apt-get update
+[sudo] password for student: 
+Hit:1 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:2 http://tz.archive.ubuntu.com/ubuntu jammy InRelease                                                                                                                                                         
+Hit:3 http://tz.archive.ubuntu.com/ubuntu jammy-updates InRelease                                                                                                                  
+Hit:4 http://security.ubuntu.com/ubuntu jammy-security InRelease                                                                                                                  
+Hit:5 http://tz.archive.ubuntu.com/ubuntu jammy-backports InRelease                                                                                                               
+Hit:6 https://ppa.launchpadcontent.net/maarten-fonville/android-studio/ubuntu jammy InRelease                               
+Hit:7 https://packages.microsoft.com/repos/vscode stable InRelease                                    
+Hit:8 https://ppa.launchpadcontent.net/mmk2410/intellij-idea/ubuntu jammy InRelease
+Hit:9 https://download.sublimetext.com apt/stable/ InRelease
+Reading package lists... Done
+W: https://download.sublimetext.com/apt/stable/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+student@oem-ThinkPad-E14-Gen-4:~$ sudo apt-get upgrade
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+The following packages have been kept back:
+  android-studio coreutils dns-root-data gdm3 gir1.2-gdm-1.0 gjs iptables libgdm1 libgjs0g libip4tc2 libip6tc2 libxtables12 ubuntu-advantage-tools
+The following packages will be upgraded:
+  alsa-ucm-conf apparmor apt apt-transport-https apt-utils base-files bind9-dnsutils bind9-host bind9-libs code cryptsetup cryptsetup-bin cryptsetup-initramfs distro-info distro-info-data dnsmasq-base evince
+  evince-common firmware-sof-signed fonts-noto-color-emoji gir1.2-adw-1 gir1.2-gnomedesktop-3.0 gir1.2-gtk-4.0 gir1.2-javascriptcoregtk-4.0 gir1.2-mutter-10 gir1.2-webkit2-4.0 git git-man gnome-desktop3-data
+  gnome-remote-desktop gnome-shell gnome-shell-common google-chrome-stable initramfs-tools initramfs-tools-bin initramfs-tools-core intellij-idea-community irqbalance kpartx kpartx-boot language-pack-en
+  language-pack-en-base language-pack-gnome-en language-pack-gnome-en-base libadwaita-1-0 libapparmor1 libapt-pkg6.0 libcryptsetup12 libegl-mesa0 libevdocument3-4 libevview3-3 libfprint-2-2 libgbm1
+  libgl1-amber-dri libgl1-mesa-dri libglapi-mesa libglx-mesa0 libgnome-bg-4-1 libgnome-desktop-3-19 libgnome-desktop-4-1 libgpgme11 libgpgmepp6 libgtk-4-1 libgtk-4-bin libgtk-4-common
+  libjavascriptcoregtk-4.0-18 libmm-glib0 libmutter-10-0 libnetplan0 libnss-systemd libpam-systemd libpcsclite1 libsgutils2-2 libspeechd2 libsystemd0 libudev1 libunwind8 libwebkit2gtk-4.0-37 libxatracker2
+  linux-firmware mesa-vulkan-drivers modemmanager mutter-common netplan.io oem-config oem-config-gtk openvpn python-apt-common python3-apt python3-debian python3-distro-info python3-distupgrade
+  python3-software-properties python3-speechd python3-update-manager software-properties-common software-properties-gtk speech-dispatcher speech-dispatcher-audio-plugins speech-dispatcher-espeak-ng
+  sublime-text systemd systemd-hwe-hwdb systemd-oomd systemd-sysv systemd-timesyncd thermald transmission-common transmission-gtk tzdata ubiquity ubiquity-frontend-gtk ubiquity-ubuntu-artwork
+  ubuntu-drivers-common ubuntu-release-upgrader-core ubuntu-release-upgrader-gtk udev ufw update-manager update-manager-core xserver-xorg-video-amdgpu yaru-theme-gnome-shell yaru-theme-gtk yaru-theme-icon
+  yaru-theme-sound
+125 upgraded, 0 newly installed, 0 to remove and 13 not upgraded.
+Need to get 623 MB of archives.
+After this operation, 168 MB of additional disk space will be used.
+Do you want to continue? [Y/n] n
+Abort.
+student@oem-ThinkPad-E14-Gen-4:~$ sude apt-get instal VLC
+Command 'sude' not found, did you mean:
+  command 'sudo' from deb sudo (1.9.9-1ubuntu2.4)
+  command 'sudo' from deb sudo-ldap (1.9.9-1ubuntu2.4)
+  command 'sure' from deb python3-sure (2.0.0-1build1)
+Try: sudo apt install <deb name>
+student@oem-ThinkPad-E14-Gen-4:~$ sudo apt-get install VLC
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package VLC
+student@oem-ThinkPad-E14-Gen-4:~$ sudo apt-get install vlc
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  i965-va-driver intel-media-va-driver liba52-0.7.4 libaacs0 libaom3 libaribb24-0 libass9 libavcodec58 libavformat58 libavutil56 libbdplus0 libbluray2 libcddb2 libchromaprint1 libcodec2-1.0 libdav1d5
+  libdc1394-25 libdca0 libdouble-conversion3 libdvbpsi10 libdvdnav4 libdvdread8 libebml5 libfaad2 libgme0 libgsm1 libigdgmm12 libixml10 libkate1 liblua5.2-0 libmad0 libmatroska7 libmd4c0 libmfx1 libmpcdec6
+  libmpeg2-4 libmysofa1 libnorm1 libopenmpt-modplug1 libopenmpt0 libpcre2-16-0 libpgm-5.3-0 libplacebo192 libpostproc55 libprotobuf-lite23 libproxy-tools libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5
+  libqt5svg5 libqt5widgets5 libqt5x11extras5 librabbitmq4 libresid-builder0c2a libsdl-image1.2 libsdl1.2debian libshine3 libsidplay2 libsnappy1v5 libsndio7.0 libspatialaudio0 libsrt1.4-gnutls libssh-gcrypt-4
+  libssh2-1 libswresample3 libswscale5 libudfread0 libupnp13 libva-drm2 libva-wayland2 libva-x11-2 libva2 libvdpau1 libvlc-bin libvlc5 libvlccore9 libx264-163 libx265-199 libxcb-composite0 libxcb-xinerama0
+  libxcb-xinput0 libxvidcore4 libzmq5 libzvbi-common libzvbi0 mesa-va-drivers mesa-vdpau-drivers ocl-icd-libopencl1 qt5-gtk-platformtheme qttranslations5-l10n va-driver-all vdpau-driver-all vlc-bin vlc-data
+  vlc-l10n vlc-plugin-access-extra vlc-plugin-base vlc-plugin-notify vlc-plugin-qt vlc-plugin-samba vlc-plugin-skins2 vlc-plugin-video-output vlc-plugin-video-splitter vlc-plugin-visualization
+Suggested packages:
+  i965-va-driver-shaders libcuda1 libnvcuvid1 libnvidia-encode1 libbluray-bdj libdvdcss2 qt5-image-formats-plugins qtwayland5 sndiod opencl-icd libvdpau-va-gl1 vlc-plugin-fluidsynth vlc-plugin-jack
+  vlc-plugin-svg
+The following NEW packages will be installed:
+  i965-va-driver intel-media-va-driver liba52-0.7.4 libaacs0 libaom3 libaribb24-0 libass9 libavcodec58 libavformat58 libavutil56 libbdplus0 libbluray2 libcddb2 libchromaprint1 libcodec2-1.0 libdav1d5
+  libdc1394-25 libdca0 libdouble-conversion3 libdvbpsi10 libdvdnav4 libdvdread8 libebml5 libfaad2 libgme0 libgsm1 libigdgmm12 libixml10 libkate1 liblua5.2-0 libmad0 libmatroska7 libmd4c0 libmfx1 libmpcdec6
+  libmpeg2-4 libmysofa1 libnorm1 libopenmpt-modplug1 libopenmpt0 libpcre2-16-0 libpgm-5.3-0 libplacebo192 libpostproc55 libprotobuf-lite23 libproxy-tools libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5
+  libqt5svg5 libqt5widgets5 libqt5x11extras5 librabbitmq4 libresid-builder0c2a libsdl-image1.2 libsdl1.2debian libshine3 libsidplay2 libsnappy1v5 libsndio7.0 libspatialaudio0 libsrt1.4-gnutls libssh-gcrypt-4
+  libssh2-1 libswresample3 libswscale5 libudfread0 libupnp13 libva-drm2 libva-wayland2 libva-x11-2 libva2 libvdpau1 libvlc-bin libvlc5 libvlccore9 libx264-163 libx265-199 libxcb-composite0 libxcb-xinerama0
+  libxcb-xinput0 libxvidcore4 libzmq5 libzvbi-common libzvbi0 mesa-va-drivers mesa-vdpau-drivers ocl-icd-libopencl1 qt5-gtk-platformtheme qttranslations5-l10n va-driver-all vdpau-driver-all vlc vlc-bin
+  vlc-data vlc-l10n vlc-plugin-access-extra vlc-plugin-base vlc-plugin-notify vlc-plugin-qt vlc-plugin-samba vlc-plugin-skins2 vlc-plugin-video-output vlc-plugin-video-splitter vlc-plugin-visualization
+0 upgraded, 106 newly installed, 0 to remove and 138 not upgraded.
+Need to get 65.4 MB of archives.
+After this operation, 256 MB of additional disk space will be used.
+Do you want to continue? [Y/n] n
+Abort.
+student@oem-ThinkPad-E14-Gen-4:~$ top
+
+

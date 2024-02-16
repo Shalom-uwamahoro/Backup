@@ -1,0 +1,1022 @@
+student@oem-ThinkPad-E14-Gen-4:~$ mkdir test
+student@oem-ThinkPad-E14-Gen-4:~$ ls
+ Assessment_one  'Content added to files on git'   Documents  'First Git assignment'   git_101    'Git Commands'   jose            princo   Screenshots   shally87      snap   Uwamahoro_html
+ Assign-1         dev101_week2                     Downloads   fudji                   git-clone   IdeaProjects    Lovelace-html   ritha    shally_101    Shalom_html   test
+student@oem-ThinkPad-E14-Gen-4:~$ cd test
+student@oem-ThinkPad-E14-Gen-4:~/test$ pwd
+/home/student/test
+student@oem-ThinkPad-E14-Gen-4:~/test$ cd
+student@oem-ThinkPad-E14-Gen-4:~$ cd ~
+student@oem-ThinkPad-E14-Gen-4:~$ cd test
+student@oem-ThinkPad-E14-Gen-4:~/test$ ^C
+student@oem-ThinkPad-E14-Gen-4:~/test$ pwd
+/home/student/test
+student@oem-ThinkPad-E14-Gen-4:~/test$ cd test
+bash: cd: test: No such file or directory
+student@oem-ThinkPad-E14-Gen-4:~/test$ ^C
+student@oem-ThinkPad-E14-Gen-4:~/test$ touch names.txt
+student@oem-ThinkPad-E14-Gen-4:~/test$ ls
+names.txt
+student@oem-ThinkPad-E14-Gen-4:~/test$ nano fruits.txt
+student@oem-ThinkPad-E14-Gen-4:~/test$ ls
+fruits.txt  names.txt
+student@oem-ThinkPad-E14-Gen-4:~/test$ cat fruits.txt
+Apple
+Mango
+Banana
+Pineaple
+Tree tomatoes
+
+student@oem-ThinkPad-E14-Gen-4:~/test$ wc fruits.txt
+ 6  6 43 fruits.txt
+student@oem-ThinkPad-E14-Gen-4:~/test$ cp fruits.txt fruits2.txt
+student@oem-ThinkPad-E14-Gen-4:~/test$ ls
+fruits2.txt  fruits.txt  names.txt
+student@oem-ThinkPad-E14-Gen-4:~/test$ cat fruits2.txt
+Apple
+Mango
+Banana
+Pineaple
+Tree tomatoes
+
+student@oem-ThinkPad-E14-Gen-4:~/test$ mv names.txt words.txt
+student@oem-ThinkPad-E14-Gen-4:~/test$ ls
+fruits2.txt  fruits.txt  words.txt
+student@oem-ThinkPad-E14-Gen-4:~/test$ man
+What manual page do you want?
+For example, try 'man man'.
+student@oem-ThinkPad-E14-Gen-4:~/test$ man ls
+
+[1]+  Stopped                 man ls
+student@oem-ThinkPad-E14-Gen-4:~/test$ history
+    1  sudo apt update
+    2  clear
+    3  sudo apt update
+    4  sudo apt install wget
+    5  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    6  sudo dpkg -i google-chrome-stable_current_amd64.deb
+    7  google-chrome
+    8  clear
+    9  sudo apt update && sudo apt upgrade
+   10  sudo apt install flatpak -y
+   11  clear
+   12  sudo apt update
+   13  sudo apt install wget
+   14  clear
+   15  sudo apt update
+   16  sudo apt install wget
+   17  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+   18  sudo dpkg -i google-chrome-stable_current_amd64.deb
+   19  sudo apt update
+   20  sudo apt install wget
+   21  clear
+   22  sudo apt update
+   23  google-chrome
+   24  clear
+   25  sudo apt update && sudo apt upgrade
+   26  sudo apt install flatpak -y
+   27  sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+   28  sudo apt install flatpak -y
+   29  clear
+   30  sudo apt update
+   31  sudo snap install slack --classic
+   32  sudo dpkg -i ~/Downloads/slack-desktop-*.deb 
+   33  sudo snap install slack --classic
+   34  snap help refresh
+   35  sudo dpkg -i ~/Downloads/slack-desktop-*.deb 
+   36  sudo snap install slack --classic
+   37  sudo dpkg -i ~/Downloads/slack-desktop-*.deb 
+   38  snap help refresh
+   39  sudo dpkg -i ~/Downloads/slack-desktop-*.deb 
+   40  sudo apt install flatpak -y
+   41  sudo dpkg -i ~/Downloads/slack-desktop-*.deb 
+   42  sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+   43  flatpak install flathub com.slack.Slack -y
+   44  sudo apt install flatpak
+   45  slack
+   46  sudo flatpak install flathub com.slack.Slack
+   47  clear
+   48  sudo apt update
+   49  clear
+   50  sudo apt install slack
+   51  slack
+   52  slack &
+   53  claer
+   54  clear
+   55  sudo apt update
+   56  sudo apt install npm
+   57  clear
+   58  sudo apt update
+   59  sudo apt-get install wget
+   60  source ~/.profile
+   61  nvm install 18.0.0
+   62  nvm --version
+   63  npm version
+   64  npx create-react-app product-api
+   65  cd product-api
+   66  code .
+   67  clear
+   68  cd ..
+   69  clear
+   70  ls
+   71  clear
+   72  pip install --upgrade pip
+   73  sudo apt install python3-pip
+   74  clear
+   75  git clone https://github.com/LekishonSheila/Myshop-Android.git
+   76  sudo apt install git
+   77  clear
+   78  git clone https://github.com/LekishonSheila/Myshop-Android.git
+   79  sudo apt install git
+   80  clear
+   81  git clone https://github.com/LekishonSheila/Myshop-Android.git
+   82  cd Myshop-Android
+   83  adb devices
+   84  clear
+   85  adb devices
+   86  sudo apt install adb
+   87  adb -s <device-id> emu kill
+   88  adb devices
+   89  cd ~/Android/sdk/platform-tools
+   90  adb -s emulator-5554 emu kill
+   91  clear
+   92  adb devices
+   93  adb -s <device-id> emu kill
+   94  adb -s <5554> emu kill
+   95  adb -s <-5554> emu kill
+   96  clear
+   97  adb -s emulator-5554 emu kill
+   98  adb devices
+   99  cd Documents
+  100  npx create-reat-app hopperlab-movie-and-tv-application
+  101  ls
+  102  cd ..
+  103  ls
+  104  cd Projects
+  105  ls
+  106  source myenv/bin/activate
+  107  ls
+  108  cd greenkiosk
+  109  ls
+  110  python3 manage.py runserver
+  111  python3 manage.py makemigrations inventory
+  112  python3 manage.py migrate inventory
+  113  python3 manage.py runserver
+  114  python3 manage.py runserver 8001
+  115  python3 manage.py createsuperuser
+  116  python3 manage.py runserver 8002
+  117  python3 manage.py runserver 8003
+  118  python3 manage.py runserver 8004
+  119  python3 manage.py runserver 8005
+  120  python3 manage.py runserver 8006
+  121  python3 manage.py runserver 8007
+  122  git commit -m "second"
+  123  git init
+  124  git add .
+  125  git init
+  126  git add .
+  127  git init
+  128  git commit - m "second"
+  129  git commit -m "second  commit"
+  130  git push -u origin main
+  131  git add .
+  132  git init
+  133  git commit -m "third  commit"
+  134  git push -u origin main
+  135  npm install react-scripts --save
+  136  npm start
+  137  npm install react-router-dom
+  138  npm start
+  139  git init
+  140  git add .
+  141  git commit -m "first commit"
+  142  git branch -M main
+  143  git remote add origin https://github.com/LekishonSheila/React-Movies.git
+  144  git push -u origin main
+  145  git init
+  146  git add .
+  147  git commit -m "react"
+  148  git push -u origin main
+  149  git clone https://github.com/rita-khaseyi/movie-website-react.git
+  150  cd movie-website-react
+  151  code .
+  152  ls
+  153  cd Projects
+  154  source myenv/bin/activate
+  155  cd greenkiosk
+  156  ls
+  157  python3 manage.py runserver
+  158  Cd Documents
+  159  cd Documents
+  160  ls
+  161  mkdir Health-Platform
+  162  cd Health-Platform
+  163  code .
+  164  cd Projects
+  165  ls
+  166  source myenv/bin/activate
+  167  cd greenkiosk
+  168  ls
+  169  python3 manage.py runserver
+  170  python3 manage.py makemigrations inventory
+  171  python3 manage.py migrate inventory
+  172  python3 manage.py makemigrations cart
+  173  python3 manage.py migrate cart
+  174  python3 manage.py makemigrations inventory
+  175  python3 manage.py migrate inventory
+  176  python3 manage.py runserver
+  177  python3 manage.py runserver 9000
+  178  python3 manage.py runserver 9001
+  179  cd Documents
+  180  ls
+  181  git init
+  182  git add .
+  183  git commit -m "first"
+  184  git init
+  185  git add .
+  186  git commit -m "first"
+  187  git init 
+  188  git add .
+  189  git commit -m "added more features"
+  190  git push -u origin main
+  191  cd Documents
+  192  mkdir sheila
+  193  cd sheila
+  194  code .
+  195  git init
+  196  git add .
+  197  git commit -m "second"
+  198  git push -u origin main
+  199  ls
+  200  cd Projects
+  201  source myenv/bin/activate
+  202  cd greenkisok
+  203  ls
+  204  cd greenkiosk
+  205  ls
+  206  python3 manage.py runserver
+  207  python3 manage.py runserver 9000
+  208  python3 manage.py createsuperuser
+  209  python3 manage.py runserver
+  210  python3 manage.py runserver 9001
+  211  python3 manage.py runserver 9002
+  212  python3 manage.py runserver 9004
+  213  python3 manage.py runserver 9005
+  214  git init
+  215  git add .
+  216  git commit -m "added"
+  217  git push -u origin main
+  218  git branch -M main
+  219  git push -u origin main
+  220  python3 manage.py runserver 9005
+  221  python3 manage.py runserver 9006
+  222  ls
+  223  cd Projects
+  224  source myenv/bin/activate
+  225  cd greenkiosk
+  226  ls
+  227  python3 manage.py runserver
+  228  python3 manage.py runserver 9001
+  229  python3 manage.py runserver 9002
+  230  cd Projects
+  231  ls
+  232  source myenv/bin/activate
+  233  cd greenkiosk
+  234  python3 manage.py runserver
+  235  python3 manage.py runserver 9002
+  236  python3 manage.py runserver 9003
+  237  git clone https://github.com/LekishonSheila/My-Portfolio.git
+  238  cd My-Portfolio
+  239  code .
+  240  npm start
+  241  git init
+  242  git add .
+  243  git commit -m "first commit"
+  244  git branch -M main
+  245  git remote add origin https://github.com/LekishonSheila/My-Posts.git
+  246  git push -u origin main
+  247  git init
+  248  git add .
+  249  git commit -m "fixed the bugs"
+  250  git push -u origin main
+  251  git init
+  252  git add .
+  253  git commit -m "added some changes"
+  254  git push -u origin main
+  255  npm start
+  256  git init
+  257  git add .
+  258  git commit -m "products list"
+  259  git push -u origin main
+  260  git init
+  261  git add .
+  262  git commit -m "education"
+  263  git branch -M main
+  264  git remote add origin https://github.com/LekishonSheila/Educational-website.git
+  265  git push -u origin main
+  266  npm start
+  267  npm start
+  268  npm install react-icons
+  269  npm start
+  270  cd Documents
+  271  create-react-app informational-dummy
+  272  clear
+  273  npx create-react-app informational-dummy
+  274  cd informational-dummy
+  275  code ..
+  276  code .
+  277  clear
+  278  cd ..
+  279  git clone https://github.com/akirachix/Isimbi-Informational.git
+  280  cd Isimbi-Informational
+  281  code .
+  282  cd isimbi-informational
+  283  npm start
+  284  npm install react-icons
+  285  npm start
+  286  npm run test
+  287  git branch
+  288  git checkout -b feature/Layout
+  289  git branch
+  290  git init 
+  291  git add .
+  292  git commit -m "added layout/feature"
+  293  git push origin feature/Layout
+  294  git push -u origin feature/Layout
+  295  git branch
+  296  git checkout feature/Layout
+  297  cd ..
+  298  git branch
+  299  git init 
+  300  git add .
+  301  git commit -m "added layout/feature"
+  302  git push -u origin feature/Layout
+  303  cd isimbi-informational
+  304  npm start
+  305  cd ..
+  306  git init
+  307  git add .
+  308  git commit -m "added styling"
+  309  git branch
+  310  git push -u origin feature/Layout
+  311  git branch
+  312  git pull  Chore/CI/CD-Pipeline
+  313  git pull origin  Chore/CI/CD-Pipeline
+  314  git ad .
+  315  git add .
+  316  git commit -m "updated CI/CD"
+  317  git push origin Chore/CI/CD-Pipeline
+  318  git pull
+  319  git push origin Chore/CI/CD-Pipeline
+  320  git pull origin Chore/CI/CD-Pipeline
+  321  git config pull.rebase false
+  322  git config pull.rebase true
+  323  git config pull.ff only
+  324  git config pull.rebase false
+  325  git pull origin Chore/CI/CD-Pipeline
+  326  git checkout Chore/CI/CD-Pipeline
+  327  git push origin Chore/CI/CD-Pipeline
+  328  git pull origin Chore/CI/CD-Pipeline
+  329  git branch
+  330  git fetch origin Chore/CI/CD-Pipeline
+  331  git diff origin/Chore/CI/CD-Pipeline
+  332  git checkout Chore/CI/CD-Pipeline
+  333  git pull origin Chore/CI/CD-Pipeline
+  334  git fetch origin
+  335  git diff origin/Chore/CI/CD-Pipeline
+  336  git add .
+  337  git branch
+  338  git clone 
+  339  git clone https://github.com/akirachix/Isimbi-Backend
+  340  cd Documents
+  341  mkdir Backend
+  342  django --version
+  343  django-admin  --version
+  344  django-admin startproject Backend-Inventory
+  345  django-admin startproject inventory
+  346  ls
+  347  cd inventory
+  348  code .
+  349  clear
+  350  cd ..
+  351  git clone https://github.com/akirachix/Isimbi-Backend
+  352  cd Isimbi-backend
+  353  git branch
+  354  git branch
+  355  git pull dev
+  356  cd isimbi-informational
+  357  git checkout feature/layout
+  358  git pull dev
+  359  ls
+  360  git branch
+  361  cd ..
+  362  git branch
+  363  git checkout feature/Layout
+  364  git pull dev
+  365  git checkout feature/Layout
+  366  git pull origin dev
+  367  django-admin --version
+  368  cd ..
+  369  python3 -m venv myenv
+  370  source myenv/bin/activity
+  371  source myenv/bin/activate
+  372  sudo apt update
+  373  sudo apt install postgresql postgresql-contrib
+  374  sudo -i -u postgres
+  375  sudo systemctl start postgresql
+  376  sudo systemctl stop postgresql
+  377  sudo systemctl enable postgresql
+  378  ls
+  379  cd Isimbi-Backend
+  380  ls
+  381  cd isimbiBackend
+  382  ls
+  383  cd isimbiBackend
+  384  ls
+  385  python3 manage.py startapp receipts
+  386  cd ..
+  387  python3 manage.py startapp receipts
+  388  source myenv/bin/activate
+  389  pip install psycopg2
+  390  pip install psycopg2-binary
+  391  python3 manage.py runserver
+  392  python3 manage.py startapp receipts
+  393  python3 manage.py startapp supplier
+  394  python3 manage.py startapp api
+  395  python3 manage.py make migrations
+  396  python3 manage.py makemigrations
+  397  python3 manage.py createsuperuser
+  398  python3 manage.py runserver
+  399  sudo service postgresql status
+  400  service postgresql start
+  401  python3 manage.py createsuperuser
+  402  SELECT usename FROM isimbiuser
+  403  SELECT isimbidatabase FROM isimbiuser
+  404  cd..
+  405  cd  .
+  406  cd  ..
+  407  python3 manage.py createsuperuser
+  408  cd isimbiBackend
+  409  python manage.py createsuperuser
+  410  python3 manage.py runserver
+  411  pip install djangorestframework
+  412  python3 manage.py runserver
+  413  psql -U postgres
+  414  postgres=# \q
+  415  python3 manage.py runserver
+  416  sudo -u postgres psql
+  417  python3 manage.py runserver
+  418  python3 manage.py makemigrations
+  419  python3 manage.py migrate
+  420  python3 manage.py runserver
+  421  python3 manage.py runserver 8001
+  422  python3 manage.py createsuperuser
+  423  python3 manage.py runserver
+  424  python3 manage.py runserver 9000
+  425  git branch
+  426  cd ..
+  427  git branch
+  428  cd ..
+  429  git branch
+  430  cd Isimbi-Backend
+  431  git branch
+  432  git checkout dev
+  433  git branch
+  434  git checkout staging
+  435  git branch
+  436  git checkout -b feature/receipts/suppliers
+  437  git branch
+  438  git init
+  439  git add .
+  440  git commit -m "created supplier and receipts apps"
+  441  git branch
+  442  git push -u origin feature/receipts/suppliers
+  443  git branch
+  444  ls
+  445  cd isimbiBackend
+  446  python3 manage.py makemigrations
+  447  python3 manage.py test
+  448  python3 manage.py makemigrations
+  449  python3 manage.py runserver
+  450  python3 manage.py runserver 9001
+  451  git branch
+  452  git init
+  453  cd ..
+  454  git init
+  455  git branch
+  456  git add .
+  457  git commit -m "added tests"
+  458  git push -u origin feature/receipts/suppliers
+  459  npm install react-icons
+  460  npm run dev
+  461  git init 
+  462  git add .
+  463  git commit -m "first commit"
+  464  git branch -M main
+  465  git remote add origin https://github.com/LekishonSheila/Fronted-dummy.git
+  466  git push -u origin main
+  467  cd Documents
+  468  npx create-next-app portal
+  469  cd portal
+  470  code .
+  471  ls
+  472  git branch
+  473  git pull dev
+  474  git checkout dev
+  475  git branch
+  476  git checkout Chore/CI/CD-Pipeline
+  477  cd ..
+  478  git branc
+  479  git branch
+  480  cd Isimbi-Frontend
+  481  ls
+  482  ls
+  483  cd ..
+  484  cd Isimbi-Frontend
+  485  git pull origin dev
+  486  npm install react-icons
+  487  npm run dev
+  488  ls
+  489  cd isimbi-fronted-web 
+  490  npm run dev
+  491  npx create-next-app@latest
+  492  npm i
+  493  npm run dev
+  494  npx run dev
+  495  npm run dev
+  496  git init 
+  497  git add .
+  498  git commit -m "second  commit"
+  499  git branch -M main
+  500  git push -u origin main
+  501  npm run dev
+  502  git branch
+  503  git checkout dev
+  504  npm run dev
+  505  npx run dev
+  506  npm run dev
+  507  ls
+  508  cd isimbi-fronted-web
+  509  npm run dev
+  510  cd isimbi-fronted-web
+  511  npm run dev
+  512  git branch
+  513  git checkout -b feature/receipt/supplier
+  514  git branch
+  515  git add .
+  516  git commit -m "created receipt/supplier features"
+  517  git push -u origin feature/receipt/supplier
+  518  pwd
+  519  cd
+  520  cd Documents
+  521  cd Downdloads
+  522  cd Documents
+  523  ls
+  524  cd Downloads
+  525  cd Screenshoots
+  526  ls
+  527  mkdir Linux-Commands
+  528  ls
+  529  cd linux-commands
+  530  ls
+  531  cd Linux-Commands
+  532  ls
+  533  touch Linux-Commands-1
+  534  ls
+  535  rm Linux-Commands-1
+  536  ls
+  537  touch Linux-Commands.txt
+  538  ls
+  539  pwd
+  540  mkdir commmands
+  541  ls
+  542  cd commands
+  543  ls
+  544  cd~
+  545  cd ~
+  546  cd..
+  547  cd.. commmands
+  548  cd ..
+  549  ls
+  550  cd ..
+  551  cd commmands
+  552  ls
+  553  cd downloads
+  554  cd Linux-Commands
+  555  cd commmands
+  556  touch commands.txt
+  557  cd Downloads
+  558  cd ..
+  559  cd Downloads
+  560  mkdir commands
+  561  mkdir command
+  562  ls
+  563  cd home
+  564  cd student
+  565  la
+  566  ls
+  567  cd Downloads
+  568  cd Linux-Commands
+  569  touch Commands.txt
+  570  ls
+  571  cd commmands
+  572  touch commands.txt
+  573  cd ..
+  574  pwd
+  575  mkdir Downloads
+  576  clear
+  577  git --version
+  578  git config --global user.name "Shalom-uwamahoro"
+  579  git config --global user.email "shalomuwamahoro@gmail.com"
+  580  mkdir git_101
+  581  ls
+  582  pwd
+  583  cd git_101
+  584  pwd
+  585  touch hello_git.txt
+  586  touch git_101.txt
+  587  ls
+  588  git init
+  589  git status
+  590  git add.
+  591  git status
+  592  git add .
+  593  git status
+  594  git commit -m "added two files"
+  595  git remote add origin https://github.com/Shalom-uwamahoro/dev--101.git
+  596  git push origin master
+  597  code .
+  598  git log
+  599  cd ..
+  600  git version
+  601  mkdir shally_101
+  602  clear
+  603  git config --global user.name "Shalom-uwamahoro"
+  604  git config --global user.email "shalomuwamahoro@gmai.com"
+  605  git add .
+  606  git commit -m "added a sentece to each of our files"
+  607  git push origin master
+  608  git config --global user.name "Shalom-uwamahoro"
+  609  git config --global user.email "shalomuwamahoro@gmail.com"
+  610  mkdir Assign-1
+  611  ls
+  612  cd Assign-1
+  613  touch Python.py
+  614  touch JavaScript.js
+  615  touch Kotlin.kot
+  616  ls
+  617  git init
+  618  git status
+  619  git add .
+  620  git status
+  621  git commit -m "added three files"
+  622  git remote add origin https://github.com/Shalom-uwamahoro/Dev101-assignment-1.git
+  623  git push origin master
+  624  history
+  625  git log
+  626  mkdir dev101_week2
+  627  ls
+  628  cd dev101_week2
+  629  clear
+  630  pwd
+  631  cd Dev101_week2
+  632  clear
+  633  cd DEV101-week2
+  634  ls
+  635  cd dev101_week2
+  636  mkdir dev101_week2
+  637  cd DEV101_week2
+  638  cd dev101_week2
+  639  clear
+  640  ls
+  641  cd DEV101_week2
+  642  cd dev101_week2
+  643  mkdir dev101_week2
+  644  cd DEV101_week2
+  645  cd dev101_week2
+  646  touch hello.txt
+  647  nano hello.txt
+  648  cat hello.txt
+  649  cat report.txt
+  650  git --version
+  651  slack --version
+  652  clear
+  653  ~
+  654  mkdir shally87
+  655  cd shally87
+  656  touch mylife
+  657  cd ~
+  658  cd shally87
+  659  touch shally1.txt
+  660  touch shally2.txt
+  661  mkdir Downloads
+  662  cd ~
+  663  mkdir Documents
+  664  cd Documents
+  665  mkdir Herlife
+  666  ls
+  667  cd shally87
+  668  cd ~
+  669  cd shally87
+  670  mv shally1.txt -/Documents/Herlife
+  671  mv --help
+  672  mv shally1.txt -t Documents
+  673  less
+  674  cd Document
+  675  clear
+  676  cd Documents
+  677  mkdir lovelace_2024
+  678  ls
+  679  cd Lovelace_2024
+  680  cd lovelace_2024
+  681  touch shalom.txt
+  682  nano
+  683  nano shalom.txt
+  684  cat shalom.txt
+  685  code .
+  686  cat shalom.txt
+  687  cat coppier.txt
+  688  mkdir Lovelace-html
+  689  ls
+  690  pwd
+  691  clear
+  692  mkdir Lovelace-html
+  693  cd Lovelace-html
+  694  touch index.html
+  695  ls
+  696  code .
+  697  mkdir Shalom_html
+  698  cd Shalom_html
+  699  touch shalom.html
+  700  ls
+  701  code .
+  702  history
+  703  clear
+  704  mkdir Uwamahoro_html
+  705  ls
+  706  cd Uwamahoro_html
+  707  ls
+  708  touch index.html
+  709  ls
+  710  code .
+  711  mkdir git-102
+  712  ls
+  713  cd git-102
+  714  touch index.html
+  715  touch navbar.htMl
+  716  ls
+  717  git init
+  718  git status
+  719  git add .
+  720  git status
+  721  git commit -m "added two files"
+  722  git remote add origin https://github.com/Shalom-uwamahoro/Git_102.git
+  723  git branch
+  724  git push -u origin master
+  725  cd git-102
+  726  touch footer.html
+  727  git add "footer.html"
+  728  git status
+  729  git commit -m "added one file"
+  730  git remote add origin https://github.com/Shalom-uwamahoro/Git_102.git
+  731  git push -u origin master
+  732  touch section1.html
+  733  git status
+  734  git add section1.html
+  735  git status
+  736  git log
+  737  rm navbar.html
+  738  rm -r navbar.html
+  739  rm -r navbar.htMl
+  740  git commit -m "removed navbar.htMl"
+  741  git status
+  742  git push -u origin master
+  743  git remote -v
+  744  git checkout d97fd02e53b67791d368fd35e3ed9d7b2f288617
+  745  cd .. git-102
+  746  rm git-102
+  747  cd .. git-102
+  748  cd ..
+  749  rm git-102
+  750  fuser -k .git
+  751  ls
+  752  rm -rf git-102
+  753  ls
+  754  mkdir git-clone
+  755  cd git-clone
+  756  git clone https://github.com/Shalom-uwamahoro/Git_102.git
+  757  ls
+  758  cd Git_102
+  759  ls
+  760  touch section2.html
+  761  git add "section2.html"
+  762  git commit -m "added section2 file"
+  763  git push -u origin master
+  764  git init
+  765  git status
+  766  git add .
+  767  git status
+  768  git commit -m "add one file"
+  769  git remote add origin https://github.com/Shalom-uwamahoro/Shalom_html_1.git
+  770  git branch
+  771  git push -u origin master
+  772  ls
+  773  cd src
+  774  ls
+  775  cd shalom
+  776  clear
+  777  git init
+  778  git status
+  779  git add "shalom.html"
+  780  git status
+  781  git commit -m "add one file"
+  782  git remote add origin https://github.com/Shalom-uwamahoro/Html-1.git
+  783  git branch
+  784  git push -u origin master
+  785  ls
+  786  cd src
+  787  ls
+  788  cd main
+  789  ls
+  790  cd kotlin
+  791  ls
+  792  git init
+  793  git status
+  794  git add .
+  795  git status
+  796  git commit -m "add one file"
+  797  git remote add origin https://github.com/Shalom-uwamahoro/Frontend-1.git
+  798  git branch
+  799  git push -u origin master
+  800  mkdir Assessment_one
+  801  cd Assessment_one
+  802  ls
+  803  touch index.html
+  804  navbar.html
+  805  touch navbar.html
+  806  ls
+  807  git init
+  808  git add .
+  809  git status
+  810  git commit -m "added two files"
+  811  git remote add origin https://github.com/Shalom-uwamahoro/Assessment_one.git
+  812  git branch
+  813  git push -u origin master
+  814  git init
+  815  git status
+  816  git add "Mutesi.kt"
+  817  git add "Main.kt"
+  818  history
+  819  git dd .
+  820  git add .
+  821  git status
+  822  git add "Mutesi.iml"
+  823  git status
+  824  git init
+  825  ls
+  826  git add "Nany.iml"
+  827  git status
+  828  git commit -m "added one file"
+  829  git remote add origin https://github.com/Shalom-uwamahoro/Kotlin.git
+  830  git push origin master
+  831  git push -u origin master
+  832  cd src
+  833  ls
+  834  cd main
+  835  ls
+  836  cd kotlin
+  837  ls
+  838  git init
+  839  git status
+  840  git add .
+  841  git status
+  842  git commit -m "added a file"
+  843  git push origin master
+  844  git push -u origin master
+  845  ls
+  846  git init
+  847  cd src
+  848  cd main
+  849  cd kotlin
+  850  git init
+  851  git add .
+  852  git status
+  853  git commit -m "added one file"
+  854  git remote add origin https://github.com/Shalom-uwamahoro/Practice.git
+  855  git push -u origin master
+  856  mkdir ritha
+  857  flag -h
+  858  ls --color=auto
+  859  ls
+  860  git log
+  861  history
+  862  unalias ls
+  863  ls
+  864  unalias ls="ls --color=auto"
+  865  mkdir ritha
+  866  cd ritha
+  867  touch luc.txt
+  868  mkdir jose
+  869  cd ritha
+  870  cd documents
+  871  cd Documents
+  872  cd ..
+  873  mkdir jose
+  874  cd ritha
+  875  mv luc.txt jose
+  876  ls
+  877  cd jose
+  878  ls
+  879  cd ..
+  880  mkdir fudji
+  881  mkdir princo
+  882  cd fudji
+  883  touch prince.txt
+  884  cd ..
+  885  cd prince
+  886  cd princo
+  887  touch nzamu.txt
+  888  cd fudji
+  889  cd ..
+  890  cd fudji
+  891  mv prince.txt princo
+  892  ls
+  893  cd ..
+  894  princo
+  895  cd princo
+  896  ls
+  897  mv nzamu.txt rihta.txt
+  898  ls
+  899  mv ritha.txt fudji
+  900  cd ..
+  901  ls
+  902  cd fudji
+  903  mkdir -p fudji1
+  904  ls
+  905  cd princo
+  906  cd fudji1
+  907  man man
+  908  man mkdir
+  909  chmod x
+  910  chmod --help
+  911  history
+  912  cd shaly
+  913  cd princo
+  914  ls
+  915  cd fudji
+  916  cd ..
+  917  cd fudji
+  918  cd -
+  919  cd fudji
+  920  cd ~
+  921  pwd
+  922  whoami
+  923  ls
+  924  ls -a
+  925  ls -la
+  926  clear
+  927  mkdir test
+  928  ls
+  929  cd test
+  930  pwd
+  931  cd
+  932  cd ~
+  933  cd test
+  934  pwd
+  935  cd test
+  936  touch names.txt
+  937  ls
+  938  nano fruits.txt
+  939  ls
+  940  cat fruits.txt
+  941  wc fruits.txt
+  942  cp fruits.txt fruits2.txt
+  943  ls
+  944  cat fruits2.txt
+  945  mv names.txt words.txt
+  946  ls
+  947  man
+  948  man ls
+  949  history
+student@oem-ThinkPad-E14-Gen-4:~/test$ !920
+cd ~
+student@oem-ThinkPad-E14-Gen-4:~$ python .. version
+/usr/bin/python: can't find '__main__' module in '/home/student/..'
+student@oem-ThinkPad-E14-Gen-4:~$ gt .. version
+Command 'gt' not found, but can be installed with:
+sudo apt install genometools
+student@oem-ThinkPad-E14-Gen-4:~$ git .. version
+git: '..' is not a git command. See 'git --help'.
+
+The most similar commands are
+	am
+	gc
+	mv
+	rm
+student@oem-ThinkPad-E14-Gen-4:~$ python -- version
+python: can't open file '/home/student/version': [Errno 2] No such file or directory
+student@oem-ThinkPad-E14-Gen-4:~$ python --version
+Python 3.10.12
+student@oem-ThinkPad-E14-Gen-4:~$ 
+
+
